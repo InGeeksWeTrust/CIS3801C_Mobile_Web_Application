@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pets R Us - Services</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <header>
+    <img class="img-responsive" src="images/pets.jpg" alt="Pet Banner"width="900" height="165" class="center">
+    <img class="img-responsive" src="images/logo.png" alt="Pet Logo"width="800" height="90" class="center">
+    </header>
+  <style>
+
+    img
+    {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+  </head>
+  <body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Pets R Us</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class ="nav navbar-nav">
+          <li><a href=index.html>Home</a></li>
+          <li class="dropdown">
+          <li><a href=adoptions.html>Adoptions</a></li>
+          <li><a href=shop.html>Shop</a></li>
+          <li class="active"><a href=services.html>Services</a></li>
+          <li><a href=sales.html>Sales</a></li>
+          <li><a href=contact.html>Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="wrapper">
+    <p>These are the services we offer at our store. Feel free to bring in your fluffy fur child for their regular grooming, or if they need to stay updated with their shots and medical records. We offer all of these services at a resonable cost to you, that way you have a great peace of mind knowing that your pet is being well taken care of.</p>
+      <img class="img-responsive" src="images/Services1.png" alt="Services Offered1"class="center"><br>
+      <img class="img-responsive" src="images/Services2.png" alt="Services Offered2"class="center">
+    <center>
+      <h2>Schedule an Appointment</h2>
+      <form action="Connect.php" method="POST">
+        <table>
+          <tr>
+            <td>Name :</td>
+            <td><input type="text" name="name" required></td>
+          </tr>
+          <tr>
+            <td>Pet Type :</td>
+            <td>
+              <input type="radio" name="petType" value="c" required>Cat
+              <input type="radio" name="petType" value="d" required>Dog
+            </td>
+          </tr>
+          <tr>
+            <td>Gender :</td>
+            <td>
+              <input type="radio" name="gender" value="m" required>Male
+              <input type="radio" name="gender" value="f" required>Female
+            </td>
+          </tr>
+          <td>Email :</td>
+          <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+          <td>Phone no :</td>
+          <td>
+            <select name="phoneCode" required>
+              <option selected hidden>Select Code</option>
+              <option value="520">520</option>
+              <option value="480">480</option>
+              <option value="602">602</option>
+              <option value="623">623</option>
+              <option value="928">928</option>
+            </select>
+            <input type="phone" name="phone" required>
+          </td>
+        </tr>
+        <br>
+        <tr>
+          <td><input type ="submit" value="Submit"></td>
+        </tr>
+        <br>
+        <br>
+      </table>
+    </form>
+    </center>
+    <div id="content">
+    </div>
+  <center>
+      <footer>
+     <p>Pets R Us ©2018</p>
+    </footer>
+  </center>
+  </div>
+ </body>
+</html>
